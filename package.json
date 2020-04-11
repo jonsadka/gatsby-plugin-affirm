@@ -9,5 +9,9 @@
     "affirm"
   ],
   "author": "Jon Sadka <jonsadka@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": ">=2.0.0",
+    "react": ">=16.4.2"
+  }
 }
