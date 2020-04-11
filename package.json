@@ -1,0 +1,13 @@
+{
+  "name": "gatsby-plugin-affirm",
+  "version": "1.0.0",
+  "description": "Plugin to add the JavaScript SDK for Affirm",
+  "repository": "git@github.com:jonsadka/gatsby-plugin-affirm.git",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "affirm"
+  ],
+  "author": "Jon Sadka <jonsadka@gmail.com>",
+  "license": "MIT"
+}
