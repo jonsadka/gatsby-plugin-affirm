@@ -1,4 +1,4 @@
-const React = require('react');
+import React from 'react';
 
 exports.onRenderBody = ({setHeadComponents}, pluginOptions) => {
   const {publicAPIKey, environmentScript} = pluginOptions;

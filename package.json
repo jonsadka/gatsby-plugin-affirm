@@ -1,17 +1,28 @@
 {
   "name": "gatsby-plugin-affirm",
   "version": "1.0.2",
-  "description": "Plugin to add the JavaScript SDK for Affirm",
+  "description": "Plugin to add the Affirm JavaScript SDK",
   "repository": "git@github.com:jonsadka/gatsby-plugin-affirm.git",
   "keywords": [
     "gatsby",
     "gatsby-plugin",
-    "affirm"
+    "affirm",
+    "affirm javascript"
   ],
+  "scripts": {
+    "build": "babel src -d .",
+    "watch": "babel src -d . -w",
+    "publish": "yarn build && npm publish"
+  },
   "author": "Jon Sadka <jonsadka@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
-    "gatsby": ">=2.0.0",
-    "react": ">=16.4.2"
+    "gatsby": "^2.0.0",
+    "react": "^16.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1"
   }
 }
