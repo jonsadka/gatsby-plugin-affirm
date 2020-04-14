@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-affirm",
   "author": "Jon Sadka <jonsadka@gmail.com>",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Plugin to add the Affirm JavaScript SDK",
   "main": "index.js",
   "license": "MIT",
