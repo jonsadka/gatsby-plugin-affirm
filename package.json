@@ -11,8 +11,7 @@
   },
   "scripts": {
     "build": "babel src -d .",
-    "watch": "babel src -d . -w",
-    "publish": "yarn build && npm publish"
+    "watch": "babel src -d . -w"
   },
   "repository": {
     "type": "git",
