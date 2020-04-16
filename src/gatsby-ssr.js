@@ -1,17 +1,17 @@
 import React from 'react';
 
 exports.onRenderBody = ({setHeadComponents}, pluginOptions) => {
-  const {publicAPIKey, environmentScript} = pluginOptions;
-
-  if (!publicAPIKey) {
-    throw new Error(
-      'The Affirm plugin requires a public API key. Did you mean to add it?'
-    );
-  }
+  const {isAsync, environmentScript, publicAPIKey, shouldDefer} = pluginOptions;
 
   if (!environmentScript) {
     throw new Error(
       'The Affirm plugin requires the path to an Affirm environment script. Did you mean to add it?'
+    );
+  }
+
+  if (!publicAPIKey) {
+    throw new Error(
+      'The Affirm plugin requires a public API key. Did you mean to add it?'
     );
   }
 
@@ -29,11 +29,10 @@ exports.onRenderBody = ({setHeadComponents}, pluginOptions) => {
 
   return setHeadComponents([
     <script
-      async={true}
+      async={Boolean(isAsync)}
+      dangerouslySetInnerHTML={{__html: snippet}}
+      defer={Boolean(shouldDefer)}
       key="plugin-affirm"
-      dangerouslySetInnerHTML={{
-        __html: snippet,
-      }}
     />,
   ]);
 };
