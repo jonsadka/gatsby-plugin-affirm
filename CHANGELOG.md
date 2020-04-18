@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.5.2 (2020-04-17)
+
+### Added
+
+- Add `experimental_shouldDeferAffirmScript` to docs.
+
 ## 1.5.1 (2020-04-17)
 
 ### Fixed

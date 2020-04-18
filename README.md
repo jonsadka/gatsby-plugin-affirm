@@ -17,8 +17,10 @@ module.exports = {
       options: {
         // Path of the Affirm script to load
         environmentScript: AFFIRM_SCRIPT_PATH,
-        // Load the script loading asynchronously
-        isAsync: false,
+        // Load the Affirm script after the document has been parsed
+        experimental_shouldDeferAffirmScript: false,
+        // Load the initial script asynchronously
+        isAsync: true,
         // Affirm write key for your environment
         publicAPIKey: YOUR_AFFIRM_KEY,
       },
