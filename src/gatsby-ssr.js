@@ -1,7 +1,7 @@
 import React from 'react';
 
 exports.onRenderBody = ({setHeadComponents}, pluginOptions) => {
-  const {isAsync, environmentScript, publicAPIKey, shouldDefer} = pluginOptions;
+  const {isAsync, environmentScript, publicAPIKey} = pluginOptions;
 
   if (!environmentScript) {
     throw new Error(
@@ -31,7 +31,6 @@ exports.onRenderBody = ({setHeadComponents}, pluginOptions) => {
     <script
       async={Boolean(isAsync)}
       dangerouslySetInnerHTML={{__html: snippet}}
-      defer={Boolean(shouldDefer)}
       key="plugin-affirm"
     />,
   ]);

@@ -21,8 +21,6 @@ module.exports = {
         isAsync: false,
         // Affirm write key for your environment
         publicAPIKey: YOUR_AFFIRM_KEY,
-        // Load the script after the document has been parsed
-        shouldDefer: false
       },
     },
   ],
