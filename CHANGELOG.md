@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.6.0 (2020-04-23)
+
+### Removed
+
+- Script snippet updated to remove `jsReady`.
+
 ## 1.5.2 (2020-04-17)
 
 ### Added
