@@ -27,7 +27,7 @@ exports.onRenderBody = function (_ref, pluginOptions) {
     script: environmentScript
   };
 
-  var snippet = '(function(l,g,m,e,a,f,b){var d,c=l[m]||{},h=document.createElement(f),n=document.getElementsByTagName(f)[0],k=function(a,b,c){return function(){a[b]._.push([c,arguments])}};c[e]=k(c,e,"set");d=c[e];c[a]={};c[a]._=[];d._=[];c[a][b]=k(c,a,b);a=0;for(b="set add save post open empty reset on off trigger ready setProduct".split(" ");a<b.length;a++)d[b[a]]=k(c,e,b[a]);a=0;for(b=["get","token","url","items"];a<b.length;a++)d[b[a]]=function(){};' + (experimental_shouldDeferAffirmScript ? 'k.defer=!0' : 'k.async=!0') + ';h.src=g[f];n.parentNode.insertBefore(h,n);delete g[f];d(g);l[m]=c})(window,' + JSON.stringify(affirmConfig) + ',"affirm","checkout","ui","script","ready");';
+  var snippet = '(function(m,g,n,d,a,e,h,c){var b=m[n]||{},k=document.createElement(e),p=document.getElementsByTagName(e)[0],l=function(a,b,c){return function(){a[b]._.push([c,arguments])}};b[d]=l(b,d,"set");var f=b[d];b[a]={};b[a]._=[];f._=[];b._=[];b[a][h]=l(b,a,h);b[c]=function(){b._.push([h,arguments])};a=0;for(c="set add save post open empty reset on off trigger ready setProduct".split(" ");a<c.length;a++)f[c[a]]=l(b,d,c[a]);a=0;for(c=["get","token","url","items"];a<c.length;a++)f[c[a]]=function(){};' + (experimental_shouldDeferAffirmScript ? 'k.defer=!0' : 'k.async=!0') + ';k.src=g[e];p.parentNode.insertBefore(k,p);delete g[e];f(g);m[n]=b})(window,' + JSON.stringify(affirmConfig) + ',"affirm","checkout","ui","script","ready","jsReady");';
 
   return setHeadComponents([_react2.default.createElement('script', {
     async: Boolean(isAsync),

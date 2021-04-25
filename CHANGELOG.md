@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.7.0 (2021-04-25)
+
+- Script updated to include `jsReady` per Affirm documentation
+
 ## 1.6.0 (2020-04-23)
 
 ### Removed
