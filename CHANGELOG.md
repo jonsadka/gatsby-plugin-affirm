@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.7.1 (2021-04-30)
+
+- Support next major versions of Gatsby and React
+
 ## 1.7.0 (2021-04-25)
 
 - Script updated to include `jsReady` per Affirm documentation

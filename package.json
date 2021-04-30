@@ -29,7 +29,7 @@
     "babel-preset-react": "^6.24.1"
   },
   "peerDependencies": {
-    "gatsby": "^2.0.0",
-    "react": "^16.0.0"
+    "gatsby": "^2.0.0 || ^3.0.0",
+    "react": "^16.0.0 || ^17.0.0"
   }
 }
