@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.2 (2022-06-15)
+
+- Add optional plugin options to schema.
+
 ## 2.2.1 (2022-06-15)
 
 - Get `CHANGELOG.md` to latest version.
