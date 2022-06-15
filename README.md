@@ -1,6 +1,6 @@
 # gatsby-plugin-affirm
 
-This plugin adds the JavaScript SDK for Affirm.
+This plugin adds the Affirm JavaScript SDK to your Gatsby project.
 
 ## Install
 
@@ -27,4 +27,18 @@ module.exports = {
     },
   ],
 };
+
+// Example usage
+if (affirm && affirm.ui.ready()) {
+  affirm.checkout(affirmCheckoutPayload);
+  affirm.checkout.open();
+}
 ```
+
+## How to publish
+
+- Make changes
+- Run `$ yarn build`
+- Commit changes
+- `$ npm version (patch|minor|major)`
+- `$ npm publish`

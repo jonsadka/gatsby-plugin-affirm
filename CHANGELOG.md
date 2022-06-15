@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.0 (2022-06-15)
+
+- Support next major versions of Gatsby and React
+
 ## 1.7.1 (2021-04-30)
 
 - Support next major versions of Gatsby and React
