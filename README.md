@@ -42,3 +42,4 @@ if (affirm && affirm.ui.ready()) {
 - Commit changes
 - `$ npm version (patch|minor|major)`
 - `$ npm publish`
+- `$ git push origin master`
