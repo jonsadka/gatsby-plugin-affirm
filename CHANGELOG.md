@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.0 (2022-06-15)
+
+- make `environmentScript` optional and update documentation
+
+## 2.0.1 (2022-06-15)
+
+- regenerate yarn.lock to update bad packages
+
 ## 2.0.0 (2022-06-15)
 
 - Support next major versions of Gatsby and React

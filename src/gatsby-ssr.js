@@ -1,5 +1,7 @@
 import React from 'react';
 
+const AFFIRM_SANDBOX_CDN = 'https://cdn1-sandbox.affirm.com/js/v2/affirm.js';
+
 exports.onRenderBody = ({setHeadComponents}, pluginOptions) => {
   const {
     isAsync,
@@ -7,12 +9,6 @@ exports.onRenderBody = ({setHeadComponents}, pluginOptions) => {
     experimental_shouldDeferAffirmScript,
     publicAPIKey,
   } = pluginOptions;
-
-  if (!environmentScript) {
-    throw new Error(
-      'The Affirm plugin requires the path to an Affirm environment script. Did you mean to add it?'
-    );
-  }
 
   if (!publicAPIKey) {
     throw new Error(
@@ -23,7 +19,7 @@ exports.onRenderBody = ({setHeadComponents}, pluginOptions) => {
   // Use your public API Key and environment script to point to the correct Affirm environment.
   const affirmConfig = {
     public_api_key: publicAPIKey,
-    script: environmentScript,
+    script: environmentScript || AFFIRM_SANDBOX_CDN,
   };
 
   // Affirm minified snippet (version 2) - Last checked on June 15, 2022
