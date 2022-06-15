@@ -1,24 +1,32 @@
 # Changelog
 
+## 2.2.1 (2022-06-15)
+
+- Get `CHANGELOG.md` to latest version.
+
+## 2.2.0 (2022-06-15)
+
+- No changes (redundant package push).
+
 ## 2.1.0 (2022-06-15)
 
-- make `environmentScript` optional and update documentation
+- Make `environmentScript` optional and update documentation.
 
 ## 2.0.1 (2022-06-15)
 
-- regenerate yarn.lock to update bad packages
+- Regenerate yarn.lock to update bad packages.
 
 ## 2.0.0 (2022-06-15)
 
-- Support next major versions of Gatsby and React
+- Support next major versions of Gatsby and React.
 
 ## 1.7.1 (2021-04-30)
 
-- Support next major versions of Gatsby and React
+- Support next major versions of Gatsby and React.
 
 ## 1.7.0 (2021-04-25)
 
-- Script updated to include `jsReady` per Affirm documentation
+- Script updated to include `jsReady` per Affirm documentation.
 
 ## 1.6.0 (2020-04-23)
 
