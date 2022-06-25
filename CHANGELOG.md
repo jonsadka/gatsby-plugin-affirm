@@ -1,6 +1,10 @@
 # Changelog
 
-## 2.2.3 (2022-06-15)
+## 2.2.4 (2022-06-25)
+
+- Fix typo
+
+## 2.2.3 (2022-06-25)
 
 - Build src files to pull in changes from 2.2.2
 

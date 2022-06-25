@@ -19,8 +19,8 @@ exports.pluginOptionsSchema = ({Joi}) => {
       .description(
         `The Affirm SDK requires a public API key. Did you forget to add it?`
       ),
-    environmentScript: Join.string(),
-    experimental_shouldDeferAffirmScript: Join.boolean(),
-    isAsync: Join.boolean(),
+    environmentScript: Joi.string(),
+    experimental_shouldDeferAffirmScript: Joi.boolean(),
+    isAsync: Joi.boolean(),
   });
 };
