@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.3 (2022-06-15)
+
+- Build src files to pull in changes from 2.2.2
+
 ## 2.2.2 (2022-06-15)
 
 - Add optional plugin options to schema.

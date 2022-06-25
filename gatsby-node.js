@@ -16,6 +16,9 @@ exports.pluginOptionsSchema = function (_ref2) {
   var Joi = _ref2.Joi;
 
   return Joi.object({
-    publicAPIKey: Joi.string().required().description('The Affirm SDK requires a public API key. Did you forget to add it?')
+    publicAPIKey: Joi.string().required().description('The Affirm SDK requires a public API key. Did you forget to add it?'),
+    environmentScript: Join.string(),
+    experimental_shouldDeferAffirmScript: Join.boolean(),
+    isAsync: Join.boolean()
   });
 };
