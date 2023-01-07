@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0.0 (2023-01-06)
+
+- Gatsby 5 support
+
 ## 2.2.4 (2022-06-25)
 
 - Fix typo
